@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простая галерея изображений</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="main">Галерея изображений</h1>
+        </div>
+    </header>
+    <div id="app">
+        <div class="first" v-if="showGallery">
+            
+            <ul>
+                <li v-for="(image, index) in images" :key="index">
+                    <figure><img :src="image.url" alt="Изображение" @click="showImage(index)" height="300px" width="300px"></figure>
+                    <p class="name">{{ image.name }}</p>
+                    <p class="author">{{ image.author }}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="window" v-else>
+            <button @click="showGallery = true">X</button>
+            <!-- <h2>{{ images[currentImageIndex].name }} </h2>
+            <h3>{{ images[currentImageIndex].author }}</h3> -->
+            <img :src="images[currentImageIndex].url" alt="Увеличенное изображение" height="500" width="500" class="image">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

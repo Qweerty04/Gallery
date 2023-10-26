@@ -1,0 +1,73 @@
+* {
+    background: rgb(231,238,174);
+    /* background: radial-gradient(circle, rgba(231,238,174,1) 0%, rgba(255,250,218,1) 100%); */
+}
+
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 1px;
+}
+.name{
+    padding-left: 40px;
+    color: black;
+    font-size: 20px;
+}
+.author{
+    padding-left: 40px;
+    color:rgb(19, 15, 15);
+    font-size: 12px;
+}
+h1{
+    margin: auto;
+    width: 20%;
+    padding: 20px;
+}
+/* div{
+    display: inline;
+    overflow: hidden;
+} */
+/* #app li img{
+    height: 300px;
+    width: 300px;
+}
+#app li img :hover{
+    height: 320px;
+    width: 320px;
+    box-shadow: 0px 0px 15px 8px rgb(8, 8, 7);
+} */
+
+#app div li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 20px;
+    vertical-align: middle;
+    /* border: 1px solid; */
+}
+figure img:hover{
+    box-shadow: 0px 0px 15px 8px rgb(8, 8, 7);
+    height: 310px;
+    width: 310px;
+}
+button{
+    color: rgb(3, 3, 3);
+    background-color: rgb(231,238,174);
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+}
+/* .window{
+    opacity: 0.6;
+} */
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+}
+.window{
+    background-color: rgba(231,238,174, 0.9);
+}
